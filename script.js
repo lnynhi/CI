@@ -1,0 +1,21 @@
+const navItem = [
+    {
+        name: 'Item 1'
+    },{
+        name: 'Item 2'
+    },{
+        name: 'Item 3'
+    },{
+        name: 'Item 4'
+    },{
+        name: 'Item 5'
+    }
+];
+
+const menu = document.getElementsByClassName('menu')[0];
+
+window.onload = function(){
+    for (let a of navItem){
+        menu.innerHTML += `<span>${a.name}</span>`;
+    }
+}
